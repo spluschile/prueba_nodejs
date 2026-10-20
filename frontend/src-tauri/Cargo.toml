@@ -1,0 +1,18 @@
+[package]
+name = "cloud-sqlserver-tester"
+version = "1.0.0"
+description = "Cliente de escritorio Tauri para pruebas de despliegue en la nube con SQL Server"
+authors = ["Antigravity QA Team"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

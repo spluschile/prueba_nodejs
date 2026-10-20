@@ -1,0 +1,30 @@
+{
+  "name": "cloud-sqlserver-vue-tauri-suite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:frontend && npm run build:backend",
+    "start": "npm --prefix backend run start",
+    "tauri:dev": "npm --prefix frontend run tauri dev",
+    "tauri:build": "npm --prefix frontend run tauri build",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "vue3",
+    "typescript",
+    "tauri",
+    "sqlserver",
+    "cloud-deployment",
+    "azure",
+    "docker"
+  ],
+  "author": "Antigravity Dev",
+  "license": "MIT"
+}

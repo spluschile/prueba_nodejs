@@ -1,0 +1,78 @@
+# ==============================================================================
+# .gitignore para Suite Fullstack (Vue 3 + TypeScript + Tauri + Node.js + SQL Server)
+# ==============================================================================
+
+# 1. Dependencias (Node.js & Rust)
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# 2. Compilaciones y Salidas de Build
+dist/
+**/dist/
+build/
+**/build/
+out/
+.output/
+*.tsbuildinfo
+
+# 3. Compilados de Rust y Tauri
+**/src-tauri/target/
+**/src-tauri/WixTools/
+*.exe
+*.msi
+*.dmg
+*.app
+*.deb
+*.rpm
+
+# 4. Variables de Entorno y Credenciales (Seguridad)
+.env
+**/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Asegurar que las plantillas de ejemplo siempre se incluyan en el repo
+!.env.example
+!**/.env.example
+
+# 5. Logs y Archivos de Depuración
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 6. Caché y Archivos Temporales
+.cache/
+.temp/
+.tmp/
+*.tmp
+*.temp
+
+# 7. Editores y Sistemas Operativos
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code / Antigravity IDE (Ignorar estado de workspace local)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# 8. Volúmenes locales de Bases de Datos y Docker
+sqlserver_data/
+**/sqlserver_data/
