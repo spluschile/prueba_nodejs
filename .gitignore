@@ -9,8 +9,8 @@ node_modules/
 .pnp.js
 
 # 2. Compilaciones y Salidas de Build
-dist/
-**/dist/
+# dist/
+# **/dist/
 build/
 **/build/
 out/
